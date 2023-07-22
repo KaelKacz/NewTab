@@ -1,0 +1,27 @@
+body {
+  background-color: gray;
+  padding: 2.5%;
+}
+
+#prefixMenu {
+  background-color: white;
+  border-radius: 3px;
+}
+
+.prefixSelector {
+  padding-right: 3px;
+}
+
+#searchButton {
+  width: 100%;
+}
+
+.formElement {
+  padding: 3px;
+}
+
+.center {
+  margin: auto;
+  width: 65%;
+  min-width: fit-content;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>New Tab</title>
+    <script defer src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="center">
+      <form class="pure-form pure-g" onsubmit="return submitted();">
+        <div class="pure-u-3-24">
+          <div class="formElement">
+            <input
+              class="pure-input-1"
+              id="prefixInput"
+              autocomplete="off"
+              placeholder="Prefix..."
+            />
+          </div>
+          <div class="formElement">
+            <div
+              id="prefixMenu"
+              class="pure-menu pure-menu-scrollable custom-restricted"
+              style="display: none"
+            ></div>
+          </div>
+        </div>
+        <div class="pure-u-18-24">
+          <div class="formElement">
+            <input
+              id="searchText"
+              class="pure-input-1 prefixSelector"
+              type="text"
+              placeholder="Search..."
+              autocomplete="off"
+              autofocus
+            />
+          </div>
+        </div>
+        <div class="pure-u-3-24">
+          <div class="formElement">
+            <button
+              id="searchButton"
+              type="submit"
+              class="pure-button pure-button-primary"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
